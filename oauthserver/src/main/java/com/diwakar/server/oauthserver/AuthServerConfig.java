@@ -15,8 +15,10 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     private final PasswordEncoder passwordEncoder;
     @Value("${user.oauth.clientId}")
     private String ClientID;
+
     @Value("${user.oauth.clientSecret}")
     private String ClientSecret;
+
     @Value("${user.oauth.redirectUris}")
     private String RedirectURLs;
 
